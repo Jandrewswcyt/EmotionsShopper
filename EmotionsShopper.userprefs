@@ -1,8 +1,9 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/wwwroot/_ViewImports.cshtml">
+﻿<Properties StartupConfiguration="{55DF544F-A40A-4BC6-B80A-F5DD294175AB}|Unit Tests" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper.Tests/UnitTest1.cs">
     <Files>
-      <File FileName="EmotionsShopper/Startup.cs" Line="26" Column="38" />
-      <File FileName="EmotionsShopper/wwwroot/_ViewImports.cshtml" Line="11" Column="1" />
+      <File FileName="EmotionsShopper/Startup.cs" Line="2" Column="36" />
+      <File FileName="EmotionsShopper/wwwroot/_ViewImports.cshtml" Line="3" Column="16" />
+      <File FileName="EmotionsShopper.Tests/UnitTest1.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,4 +12,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EmotionsShopper.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
