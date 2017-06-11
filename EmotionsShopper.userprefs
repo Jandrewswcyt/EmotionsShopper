@@ -1,8 +1,7 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/Program.cs">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/Startup.cs">
     <Files>
-      <File FileName="EmotionsShopper/Startup.cs" Line="1" Column="1" />
-      <File FileName="EmotionsShopper/Program.cs" Line="1" Column="1" />
+      <File FileName="EmotionsShopper/Startup.cs" Line="20" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
