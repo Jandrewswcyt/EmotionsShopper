@@ -1,0 +1,10 @@
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.deps.json
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.runtimeconfig.json
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.runtimeconfig.dev.json
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.dll
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.pdb
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/obj/Debug/netcoreapp1.1/EmotionsShopper.csprojResolveAssemblyReference.cache
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/obj/Debug/netcoreapp1.1/EmotionsShopper.csproj.CoreCompileInputs.cache
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/obj/Debug/netcoreapp1.1/EmotionsShopper.AssemblyInfo.cs
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/obj/Debug/netcoreapp1.1/EmotionsShopper.dll
+/Users/jonathanandrews/Projects/EmotionsShopper/EmotionsShopper/obj/Debug/netcoreapp1.1/EmotionsShopper.pdb

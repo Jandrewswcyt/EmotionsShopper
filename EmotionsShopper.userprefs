@@ -1,7 +1,8 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/wwwroot/_ViewImports.cshtml">
     <Files>
-      <File FileName="EmotionsShopper/Startup.cs" Line="20" Column="9" />
+      <File FileName="EmotionsShopper/Startup.cs" Line="26" Column="38" />
+      <File FileName="EmotionsShopper/wwwroot/_ViewImports.cshtml" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
