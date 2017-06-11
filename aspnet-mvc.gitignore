@@ -22,9 +22,12 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
-bin/
-obj/
+*bin/
+*obj/
 TestResults/
+*EmotionsShopper/bin/
+EmotionsShopper/obj/
+EmotionsShopper/TestResults/
 ###################
 # Web publish log #
 ###################
