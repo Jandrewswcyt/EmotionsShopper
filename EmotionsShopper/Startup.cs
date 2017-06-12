@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using EmotionsShopper.DataTypes.Interfaces;
+using EmotionsShopper.Fakes;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -11,6 +13,7 @@ namespace EmotionsShopper
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IProductRepository,FakeProductRepository>();
             services.AddMvc();
         }
 
@@ -20,7 +23,10 @@ namespace EmotionsShopper
             app.UseDeveloperExceptionPage(); //#TODO remove from deployed version. 
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(name: "default", template: "{controller=Product}/{action=List}/{id?}");
+            });
         }
     }
 }

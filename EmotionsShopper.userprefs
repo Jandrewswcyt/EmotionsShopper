@@ -1,11 +1,17 @@
-﻿<Properties StartupConfiguration="{55DF544F-A40A-4BC6-B80A-F5DD294175AB}|Unit Tests" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/Models/Product.cs">
+﻿<Properties StartupConfiguration="{6381A607-649F-4EBF-A7CB-461183FDB6F9}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmotionsShopper/Startup.cs">
     <Files>
-      <File FileName="EmotionsShopper/Startup.cs" Line="23" Column="42" />
+      <File FileName="EmotionsShopper/Startup.cs" Line="29" Column="16" />
       <File FileName="EmotionsShopper/wwwroot/_ViewImports.cshtml" Line="3" Column="24" />
-      <File FileName="EmotionsShopper.Tests/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="EmotionsShopper/Program.cs" Line="14" Column="44" />
-      <File FileName="EmotionsShopper/Models/Product.cs" Line="6" Column="9" />
+      <File FileName="EmotionsShopper.Tests/UnitTest1.cs" Line="15" Column="1" />
+      <File FileName="EmotionsShopper/Program.cs" Line="23" Column="6" />
+      <File FileName="EmotionsShopper/Models/Product.cs" Line="6" Column="23" />
+      <File FileName="EmotionsShopper/DataTypes/Interfaces/IProductRepository.cs" Line="10" Column="6" />
+      <File FileName="EmotionsShopper/Fakes/FakeProductRepository.cs" Line="16" Column="12" />
+      <File FileName="EmotionsShopper/Controllers/ProductController.cs" Line="17" Column="64" />
+      <File FileName="EmotionsShopper/Views/Shared/_Layout.cshtml" Line="14" Column="1" />
+      <File FileName="EmotionsShopper/Views/_ViewStart.cshtml" Line="2" Column="25" />
+      <File FileName="EmotionsShopper/Views/Product/List.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,6 +19,9 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EmotionsShopper PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.EmotionsShopper.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <DisabledProjects>
+    <String>EmotionsShopper.Tests/EmotionsShopper.Tests.csproj</String>
+  </DisabledProjects>
 </Properties>

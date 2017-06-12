@@ -1,4 +1,8 @@
 {
+  "buildOptions": {
+   "emitEntryPoint": true,
+   "preserveCompilationContext": true
+},
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
