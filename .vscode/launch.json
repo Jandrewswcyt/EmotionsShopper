@@ -8,7 +8,7 @@
             "preLaunchTask": "build",
             "program": "${workspaceRoot}/EmotionsShopper/bin/Debug/netcoreapp1.1/EmotionsShopper.dll",
             "args": [],
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceRoot}/EmotionsShopper",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {

@@ -1,4 +1,5 @@
-﻿using EmotionsShopper.DataTypes.Interfaces;
+﻿using System.IO;
+using EmotionsShopper.DataTypes.Interfaces;
 using EmotionsShopper.Fakes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
