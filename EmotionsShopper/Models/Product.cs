@@ -1,5 +1,4 @@
-﻿using System;
-namespace EmotionsShopper.Models
+﻿namespace EmotionsShopper.Models
 {
     public class Product
     {
