@@ -15,22 +15,25 @@ namespace EmotionsShopper.Fakes
             {
                 context.Products.AddRange(
                     new Product
-                    { 
+                    {
                         Name = "Indifferent",
                         Description = "having no particular interest or sympathy; unconcerned.",
-                        Category = "Neutral"
+                        Category = "Neutral",
+                        Price = 9.50m 
                     },
                     new Product
                     {
                         Name = "Joy",
                         Description = "the expression or display of glad feeling.",
-                        Category = "Positive"
+                        Category = "Positive",
+                        Price = 50 
                     },
                     new Product
                     {
                         Name = "Saddness",
                         Description = "the condition or quality of being sad.",
-                        Category = "Negative"
+                        Category = "Negative", 
+                        Price = 10
                     },
                     new Product
                     {
@@ -42,25 +45,29 @@ namespace EmotionsShopper.Fakes
 					{
 						Name = "Depression",
 						Description = "Feelings of severe despondency and dejection.",
-    					Category = "Negative"
+    					Category = "Negative",
+                        Price = 8.50m 
 					},
                     new Product
                     {
                         Name = "Ecstatic",  
                         Description = "feeling or expressing overwhelming happiness or joyful excitement.",
-                        Category = "Positive"
+                        Category = "Positive", 
+                        Price = 75
                     },
                     new Product 
                     { 
                         Name = "Disengaged", 
-                        Description = "Emotionally detached.\n", 
-                        Category ="Neutral"
+                        Description = "Emotionally detached.", 
+                        Category ="Neutral", 
+                        Price = 12.99m 
                     },
                     new Product 
                     {
                         Name = "Disinterested", 
                         Description = "Not influenced by considerations of personal advantage.", 
-                        Category = "Neutral"
+                        Category = "Neutral", 
+                        Price = 9.99m
                     }
                     
 				);
