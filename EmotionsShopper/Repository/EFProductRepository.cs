@@ -9,6 +9,11 @@ namespace EmotionsShopper.Repository
     {
         private ApplicationDbContext context;
 
+        public EFProductRepository(ApplicationDbContext ctx)
+        {
+            context = ctx; 
+        }
+
         public IEnumerable<Product> Products => context.Products; 
     }
 }

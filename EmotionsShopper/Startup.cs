@@ -26,6 +26,7 @@ namespace EmotionsShopper
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //set up EF
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:EmotionsShopperProducts:ConnectionString"])); 
             services.AddTransient<IProductRepository,EFProductRepository>();
             services.AddMvc();
