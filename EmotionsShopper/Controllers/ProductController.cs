@@ -17,9 +17,10 @@ namespace EmotionsShopper.Controllers
             repository = repo;
         }
 
-        public ViewResult List(int page = 1) => View(new ProductsListViewModel
+        public ViewResult List(string category, int page = 1) => View(new ProductsListViewModel
         {
             Products = repository.Products
+            .Where(p => category == null || p.Category == category)
             .OrderBy
             (p => p.ProductID) // order by id
             .Skip((page - 1) * ProductsPerPage) // skip all products before
@@ -29,7 +30,9 @@ namespace EmotionsShopper.Controllers
                 CurrentPage = page,
                 ItemsPerPage = ProductsPerPage,
                 TotalItems = repository.Products.Count()
-            }
+            },
+
+            CurrentCategory = category
         });
 
         // GET: /<controller>/

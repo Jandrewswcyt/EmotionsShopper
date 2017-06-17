@@ -40,8 +40,11 @@ namespace EmotionsShopper
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
-                routes.MapRoute(name: "pagination", template: "Products/Page{page}", defaults: new { Controller = "Product", action = "List" }); 
-                routes.MapRoute(name: "default", template: "{controller=Product}/{action=List}/{id?}");
+                routes.MapRoute(name: null, template: "{category}/Page{page:int}", defaults: new { controller = "Product", action = "List"});
+                routes.MapRoute(name: null, template: "Page{page:int}", defaults: new { Controller = "Product", action = "List", page = 1 });
+                routes.MapRoute(name: null, template: "{category}", defaults: new { Controller = "Product", action = "List", page = 1 });
+                routes.MapRoute(name: null, template: "", defaults: new { Controller = "Product", action = "List", page = 1 });
+                routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
 
             FakeSeedData.Populate(app); 
