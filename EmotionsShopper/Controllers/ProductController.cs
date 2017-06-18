@@ -29,7 +29,8 @@ namespace EmotionsShopper.Controllers
             {
                 CurrentPage = page,
                 ItemsPerPage = ProductsPerPage,
-                TotalItems = repository.Products.Count()
+                TotalItems = category == null ? repository.Products.Count() : repository.Products.Where
+                                                          (p => p.Category == category).Count()
             },
 
             CurrentCategory = category
