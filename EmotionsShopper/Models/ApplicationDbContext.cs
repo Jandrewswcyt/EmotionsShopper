@@ -5,9 +5,9 @@ namespace EmotionsShopper.Models
     {
         public DbSet<Product> Products { get; set; }
 
-		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
+            optionsBuilder.UseSqlite("Filename=./Products.db");
         }
 
     }

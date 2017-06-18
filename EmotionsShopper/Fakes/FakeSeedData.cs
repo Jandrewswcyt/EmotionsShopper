@@ -28,6 +28,13 @@ namespace EmotionsShopper.Fakes
                         Category = "Positive",
                         Price = 50 
                     },
+					new Product
+					{
+						Name = "Tears of Joy",
+                        Description = "the expression or display of glad feeling (With added tears).",
+						Category = "Positive",
+						Price = 75
+					},
                     new Product
                     {
                         Name = "Saddness",
@@ -47,6 +54,13 @@ namespace EmotionsShopper.Fakes
 						Description = "Feelings of severe despondency and dejection.",
     					Category = "Negative",
                         Price = 8.50m 
+					},
+					new Product
+					{
+						Name = "Dissapointment",
+						Description = "Sadness or displeasure caused by the non-fulfilment of one's hopes or expectations.",
+						Category = "Negative",
+						Price = 4.99m
 					},
                     new Product
                     {
@@ -68,7 +82,21 @@ namespace EmotionsShopper.Fakes
                         Description = "Not influenced by considerations of personal advantage.", 
                         Category = "Neutral", 
                         Price = 9.99m
-                    }
+                    },
+					new Product
+					{
+						Name = "Sorrow",
+						Description = "A feeling of deep distress caused by loss, disappointment, or other misfortune suffered by oneself or others.",
+						Category = "Negative",
+						Price = 9.99m
+					},
+					new Product
+					{
+						Name = "Tears of Sorrow",
+                        Description = "A feeling of deep distress caused by loss, disappointment, or other misfortune suffered by oneself or others (with added tears).",
+						Category = "Negative",
+						Price = 24.99m
+					}
                     
 				);
 

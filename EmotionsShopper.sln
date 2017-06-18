@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionsShopper", "EmotionsShopper\EmotionsShopper.csproj", "{6381A607-649F-4EBF-A7CB-461183FDB6F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionsShopper.Tests", "EmotionsShopper.Tests\EmotionsShopper.Tests.csproj", "{55DF544F-A40A-4BC6-B80A-F5DD294175AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionsShopper.Tests", "EmotionsShopper.Tests\EmotionsShopper.Tests.csproj", "{CE0069C0-1749-45F7-B63A-BEF3CA1D755D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,9 @@ Global
 		{6381A607-649F-4EBF-A7CB-461183FDB6F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6381A607-649F-4EBF-A7CB-461183FDB6F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6381A607-649F-4EBF-A7CB-461183FDB6F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55DF544F-A40A-4BC6-B80A-F5DD294175AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55DF544F-A40A-4BC6-B80A-F5DD294175AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55DF544F-A40A-4BC6-B80A-F5DD294175AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55DF544F-A40A-4BC6-B80A-F5DD294175AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE0069C0-1749-45F7-B63A-BEF3CA1D755D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0069C0-1749-45F7-B63A-BEF3CA1D755D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0069C0-1749-45F7-B63A-BEF3CA1D755D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0069C0-1749-45F7-B63A-BEF3CA1D755D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

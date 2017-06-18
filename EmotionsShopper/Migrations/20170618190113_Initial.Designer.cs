@@ -8,14 +8,13 @@ using EmotionsShopper.Models;
 namespace EmotionsShopper.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20170614181037_Initial")]
+    [Migration("20170618190113_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "1.1.2")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "1.1.2");
 
             modelBuilder.Entity("EmotionsShopper.Models.Product", b =>
                 {
