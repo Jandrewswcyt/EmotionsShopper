@@ -4,7 +4,6 @@ using Moq;
 using EmotionsShopper.DataTypes.Interfaces;
 using EmotionsShopper.Models;
 using EmotionsShopper.Controllers;
-using System.Collections.Generic;
 using EmotionsShopper.Models.ViewModel;
 
 namespace EmotionsShopper.Tests
@@ -15,9 +14,9 @@ namespace EmotionsShopper.Tests
         public void Can_Paginate()
         {
             //Arrange
-            Mock<IProductRepository> prodRepMock = ArrangeMockProductRepository();
+            Mock<IProductRepository> prodRepMock = TestCommon.ArrangeMockProductRepository();
 
-            ProductController controller = CreateProductController(prodRepMock,3);
+            ProductController controller = TestCommon.CreateProductController(prodRepMock,3);
             //Act
             ProductsListViewModel result = controller.List(null, 2).ViewData.Model as ProductsListViewModel;
 
@@ -36,9 +35,9 @@ namespace EmotionsShopper.Tests
         public void Can_Sen_Pagination_View_Model()
         {
             //Arrange
-            Mock<IProductRepository> prodRepMock = ArrangeMockProductRepository();
+            Mock<IProductRepository> prodRepMock = TestCommon.ArrangeMockProductRepository();
 
-            ProductController controller = CreateProductController(prodRepMock, 3); 
+            ProductController controller = TestCommon.CreateProductController(prodRepMock, 3); 
 
             // Act
             ProductsListViewModel result = controller.List(null,2).ViewData.Model as ProductsListViewModel;
@@ -55,9 +54,9 @@ namespace EmotionsShopper.Tests
         public void Can_Filter_Products()
         {
             //Arrange
-            Mock<IProductRepository> prodRepMock = ArrangeMockProductRepository();
+            Mock<IProductRepository> prodRepMock = TestCommon.ArrangeMockProductRepositoryUnorderedCat();
 
-            ProductController controller = CreateProductController(prodRepMock, 3); 
+            ProductController controller = TestCommon.CreateProductController(prodRepMock, 3); 
 
             //Act
 
@@ -71,26 +70,7 @@ namespace EmotionsShopper.Tests
 
         }
 
-        private static Mock<IProductRepository> ArrangeMockProductRepository()
-        {
-            Mock<IProductRepository> prodRepMock = new Mock<IProductRepository>();
-            prodRepMock.Setup(m => m.Products).Returns(new Product[]
-            {
-                new Product{ProductID = 1, Name = "P1", Category = "C1"},
-                new Product{ProductID = 2, Name = "P2", Category = "C2"},
-                new Product{ProductID = 3, Name = "P3", Category = "C1"},
-                new Product{ProductID = 4, Name = "P4", Category = "C2"},
-                new Product{ProductID = 5, Name = "P5", Category = "C5"},
-            });
-            return prodRepMock;
-        }
 
-        private static ProductController CreateProductController(Mock<IProductRepository> prodRepMock, int productsPerPage)
-        {
-            ProductController controller = new ProductController(prodRepMock.Object);
-            controller.ProductsPerPage = productsPerPage;
-            return controller;
-        }
 
 
     }

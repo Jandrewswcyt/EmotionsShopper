@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using System.Collections.Generic;
 
 namespace EmotionsShopper.Infrastructure.Helpers
 {
@@ -28,6 +29,9 @@ namespace EmotionsShopper.Infrastructure.Helpers
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
+        [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
+        public Dictionary<string, object> PageUrlValues { get; set; } = new Dictionary<string, object>();
+
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
@@ -36,7 +40,8 @@ namespace EmotionsShopper.Infrastructure.Helpers
             for(int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
-                tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = i });
+                PageUrlValues["page"] = i; 
+                tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
 
                 if(PageClassesEnabled)
                 {
