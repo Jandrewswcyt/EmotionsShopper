@@ -36,11 +36,5 @@ namespace EmotionsShopper.Tests
             return prodRepMock;
         }
 
-        public static ProductController CreateProductController(Mock<IProductRepository> prodRepMock, int productsPerPage)
-        {
-            ProductController controller = new ProductController(prodRepMock.Object);
-            controller.ProductsPerPage = productsPerPage;
-            return controller;
-        }
     }
 }
