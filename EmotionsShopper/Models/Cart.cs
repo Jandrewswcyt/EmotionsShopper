@@ -28,7 +28,7 @@ namespace EmotionsShopper.Models
 
         public virtual void RemoveItem(Product product)
         {
-            lineCollection.RemoveAll(l => l.Prooduct.Price == product.ProductID);
+            lineCollection.RemoveAll(l => l.Prooduct.ProductID == product.ProductID);
         }
 
         public virtual decimal GetTotalValue() => lineCollection.Sum(e => e.Prooduct.Price * e.Quantity);
