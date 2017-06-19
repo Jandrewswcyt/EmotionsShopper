@@ -18,7 +18,7 @@ namespace EmotionsShopper.Tests
             //Act 
             target.AddItem(p1, 1);
             target.AddItem(p2, 2);
-
+                
             Cart.CartLine[] results = target.Lines.ToArray();
 
             //Asset 
